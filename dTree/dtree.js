@@ -84,33 +84,34 @@ function dTree(objName) {
   };
 
   this.icon = {
-    root: "./img/base.gif",
+    root: "https://swsw1005.github.io/dTree/img/base.gif",
 
-    folder: "./img/folder.gif",
+    folder: "https://swsw1005.github.io/dTree/img/folder.gif",
 
-    folderOpen: "./img/folderopen.gif",
+    folderOpen: "https://swsw1005.github.io/dTree/img/folderopen.gif",
 
-    node: "./img/page.gif",
+    node: "https://swsw1005.github.io/dTree/img/page.gif",
 
-    empty: "./img/empty.gif",
+    empty: "https://swsw1005.github.io/dTree/img/empty.gif",
 
-    line: "./img/line.gif",
+    line: "https://swsw1005.github.io/dTree/img/line.gif",
 
-    join: "./img/join.gif",
+    join: "https://swsw1005.github.io/dTree/img/join.gif",
 
-    joinBottom: "./img/joinbottom.gif",
+    joinBottom: "https://swsw1005.github.io/dTree/img/joinbottom.gif",
 
-    plus: "./img/plus.gif",
+    plus: "https://swsw1005.github.io/dTree/img/plus.gif",
 
-    plusBottom: "./img/plusbottom.gif",
+    plusBottom: "https://swsw1005.github.io/dTree/img/plusbottom.gif",
 
-    minus: "./img/minus.gif",
+    minus: "https://swsw1005.github.io/dTree/img/minus.gif",
 
-    minusBottom: "./img/minusbottom.gif",
+    minusBottom:
+      "https://swsw1005.github.io/dTree/img/minusbottom.gif",
 
-    nlPlus: "./img/nolines_plus.gif",
+    nlPlus: "https://swsw1005.github.io/dTree/img/nolines_plus.gif",
 
-    nlMinus: "./img/nolines_minus.gif",
+    nlMinus: "https://swsw1005.github.io/dTree/img/nolines_minus.gif",
   };
 
   this.obj = objName;
