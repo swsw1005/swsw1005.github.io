@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+
+  <script src="/modernizr.js"></script>
+
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <button onclick="aaa()">aaa()</button>
+
+  <a href="https://webrtc.github.io/samples/src/content/getusermedia/gum/">aaaa</a>
+
+  <script>
+
+    function aaa() {
+
+      var msg = "";
+
+
+      try {
+        navigator.getUserMedia();
+        msg += "1111  ";
+      } catch (error) {
+        alert("ERROR 111::::" + error);
+      }
+
+      try {
+        navigator.webkitGetUserMedia();
+        msg += "2222  ";
+      } catch (error) {
+        alert("ERROR 222::::" + error);
+      }
+
+      try {
+        navigator.mozGetUserMedia();
+        msg += "3333  ";
+      } catch (error) {
+        alert("ERROR 333::::" + error);
+      }
+
+      try {
+        navigator.msGetUserMedia();
+        msg += "4444  ";
+      } catch (error) {
+        alert("ERROR 444::::" + error);
+      }
+
+      try {
+        navigator.mediaDevices.getUserMedia();
+        msg += "5555  ";
+      } catch (error) {
+        alert("ERROR 555::::" + error);
+      }
+
+      try {
+        navigator.mediaDevices.webkitGetUserMedia();
+        msg += "6666  ";
+      } catch (error) {
+        alert("ERROR 666::::" + error);
+      }
+
+      try {
+        navigator.mediaDevices.mozGetUserMedia();
+        msg += "7777  ";
+      } catch (error) {
+        alert("ERROR 777::::" + error);
+      }
+
+      try {
+        navigator.mediaDevices.msGetUserMedia();
+        msg += "8888  ";
+      } catch (error) {
+        alert("ERROR 888::::" + error);
+      }
+
+      try {
+        if (Modernizr.getusermedia) {
+          // supported
+          msg += "aaaa  ";
+        } else {
+          // not-supported
+          msg += "bbbb  ";
+        }
+      } catch (error) {
+        alert("ERROR abab::::" + error);
+      }
+
+      if (msg.length > 1) {
+        alert(msg);
+      }
+
+
+
+    }
+
+  </script>
+
+  <script src="" async defer></script>
+</body>
+
+</html>
