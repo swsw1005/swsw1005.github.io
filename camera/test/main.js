@@ -40,6 +40,5 @@ function init(e) {
    handleSuccess(stream);
  }).catch(function(err){
    handleError(err);
- })
-
-// document.querySelector('#showVideo').addEventListener('click', init(e));
+ });
+}
