@@ -42,4 +42,4 @@ function init(e) {
    handleError(err);
  })
 
-document.querySelector('#showVideo').addEventListener('click', e => init(e));
+// document.querySelector('#showVideo').addEventListener('click', init(e));
