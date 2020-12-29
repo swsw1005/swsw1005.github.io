@@ -35,7 +35,7 @@ function errorMsg(msg, error) {
   }
 }
 
-function init(e) {
+function init() {
  navigator.mediaDevices.getUserMedia(constraints).then(function(stream){
    handleSuccess(stream);
  }).catch(function(err){
