@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div id="back" style="width: 100%; height: 100%; background-color: cyan; border: 2px red solid;"> </div>
+
+
+  <div id="msg" style="position: fixed; top: 5px; left: 5px; background-color: black;"> </div>
+
+  <script>
+
+    window.onload = function () {
+      aaa();
+    }
+
+    window.onresize = function () {
+      aaa();
+    }
+
+    function aaa() {
+      var w1 = window.innerWidth;
+      var h1 = window.innerHeight;
+
+      var w2 = document.getElementById("back").clientWidth;
+      var h2 = document.getElementById("back").clientHeight;
+
+      var w3 = document.body.clientWidth;
+      var h3 = docuemnt.body.clientHeight;
+
+
+      var msg = "";
+
+      msg += " window.innerWidth==" + w1 + "\n";
+      msg += " window.innerHeight==" + h1 + "\n";
+      msg += " document.getElementById('back').clientWidth==" + w2 + "\n";
+      msg += " document.getElementById('back').clientHeight==" + h2 + "\n";
+      msg += " document.body.clientWidth==" + w3 + "\n";
+      msg += " docuemnt.body.clientHeight==" + h3 + "\n";
+
+      document.getElementById("msg").innerText = msg;
+
+    }
+
+  </script>
+
+</body>
+
+</html>
