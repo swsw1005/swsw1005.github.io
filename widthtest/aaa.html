@@ -12,6 +12,14 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="">
+
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,7 +50,7 @@
       var h2 = document.getElementById("back").clientHeight;
 
       var w3 = document.body.clientWidth;
-      var h3 = docuemnt.body.clientHeight;
+      var h3 = document.body.clientHeight;
 
 
       var msg = "";
@@ -52,7 +60,7 @@
       msg += " document.getElementById('back').clientWidth==" + w2 + "\n";
       msg += " document.getElementById('back').clientHeight==" + h2 + "\n";
       msg += " document.body.clientWidth==" + w3 + "\n";
-      msg += " docuemnt.body.clientHeight==" + h3 + "\n";
+      msg += " document.body.clientHeight==" + h3 + "\n";
 
       document.getElementById("msg").innerText = msg;
 
